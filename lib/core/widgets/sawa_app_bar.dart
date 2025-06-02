@@ -60,6 +60,12 @@ class SawaAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
                 SizedBox(width: Spacing.xl),
                 _NavLink(
+                  title: 'Services',
+                  route: AppRoutes.services,
+                  isTransparent: isTransparent,
+                ),
+                SizedBox(width: Spacing.xl),
+                _NavLink(
                   title: 'How it works',
                   route: AppRoutes.about,
                   isTransparent: isTransparent,
@@ -68,12 +74,6 @@ class SawaAppBar extends StatelessWidget implements PreferredSizeWidget {
                 _NavLink(
                   title: 'Case Studies',
                   route: AppRoutes.caseStudies,
-                  isTransparent: isTransparent,
-                ),
-                SizedBox(width: Spacing.xl),
-                _NavLink(
-                  title: 'Pricing & Services',
-                  route: AppRoutes.about,
                   isTransparent: isTransparent,
                 ),
               ],

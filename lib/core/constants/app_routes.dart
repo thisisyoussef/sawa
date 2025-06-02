@@ -8,6 +8,7 @@ class AppRoutes {
   static const String caseStudyDetail = '/case-studies/:id';
   static const String customize = '/customize';
   static const String productShowcase = '/product-showcase';
+  static const String services = '/services';
   static const String orders = '/orders';
   static const String checkout = '/checkout';
   static const String login = '/login';

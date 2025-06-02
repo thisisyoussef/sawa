@@ -9,6 +9,7 @@ import '../../features/home/presentation/screens/svg_generator_screen.dart';
 import '../../features/products/presentation/screens/product_showcase_screen.dart';
 import '../../features/products/presentation/screens/product_detail_screen.dart';
 import '../../features/product_customization/presentation/screens/customize_screen.dart';
+import '../../features/services/presentation/screens/services_screen.dart';
 
 class AppRouter {
   static final router = GoRouter(
@@ -44,6 +45,11 @@ class AppRouter {
           final productId = state.uri.queryParameters['productId'];
           return CustomizeScreen(productId: productId);
         },
+      ),
+      GoRoute(
+        path: AppRoutes.services,
+        name: 'services',
+        builder: (context, state) => const ServicesScreen(),
       ),
       // Debug routes
       GoRoute(
